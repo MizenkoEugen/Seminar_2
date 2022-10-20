@@ -4,6 +4,7 @@
 // 918 -> 98
 
 int number = new Random().Next(100, 1000);
-int firstDigit = number / 100;
-int lastDigit = number % 10;
-System.Console.WriteLine($"Первая и последняя цифры числа {number} -> {firstDigit}{lastDigit}");
+int ost = number % 10;
+int num = (number / 100) * 10 + ost;
+
+System.Console.WriteLine($"{number} -> {num}");
